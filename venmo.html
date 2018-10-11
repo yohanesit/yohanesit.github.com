@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Yohanes Sitanggang</title>
+  <meta name="description" content="I'm Yohanes Sitanggang, a Product Designer at GetCraft."
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/hover.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/dot.png">
+
+  <!-- jsQuery
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $("#moon").click(function(){
+          $("body").addClass("day");
+          $("body").removeClass("night");
+      });
+      $("#sun").click(function(){
+          $("body").removeClass("day");
+          $("body").addClass("night");
+      });
+  });
+
+</script>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("June 1, 2018 09:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = now - countDownDate;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="counter"
+    document.getElementById("counter").innerHTML = days + " days, " + hours + " hour" + (hours === 1 ? "" : "s") + ", " + minutes + " minute" + (minutes === 1 ? "" : "s") + ", and "  + seconds + " second" + (seconds === 1 ? "" : "s");
+
+    // If the count down errors, write some text
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("counter").innerHTML = "2 years";
+    }
+}, 1000);
+</script>
+
+    <!-- Google Analytics
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-48335777-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <script>
+      var trackOutboundLink = function(url) {
+         ga('send', 'event', 'outbound', 'click', url, {
+           'transport': 'beacon',
+           'hitCallback': function(){document.location = url;}
+         });
+      }
+    </script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<body class="night">
+<div class="venmo-hero-image">
+  <div class="hero-text">
+  </div>
+</div>
+<div class="spacer48"></div>
+<div class="container animated fadeIn one">
+  <div class ="row">
+    <div class ="four columns">
+      <h1>Got Venmo?</h1>
+    </div>
+  </div>
+  <div class="spacer48"></div>
+  <div class="row group">
+    <div class="three columns icon">
+   		<h4>Background</h4>
+    </div>
+    <div class="seven columns offset-by-two">
+      <div class="animated fadeIn two">
+       <p>It’s a useful app for a college student in US. I use it to pay my rent, utilities, groceries, occasional drinks, split gas, a lot of stuff.</p>
+      </div>
+    </div>
+  </div>
+  <div class="spacer48"></div>
+  <div class="row group">
+    <div class="three columns icon">
+   		<h4>Problem</h4>
+    </div>
+    <div class="seven columns offset-by-two">
+      <div class="animated fadeIn two">
+       <p>Reduce the amount of “can you send me back the money I just sent you, that was a mistake.”</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="six columns offset-by-three">
+    <img class="u-max-full-width" src="images/venmo-current.png">
+  </div>
+</div>
+<div class = "container animated fadeIn two">
+  <div class="row group">
+    <div class="three columns icon">
+   		<h4>A little study</h4>
+    </div>
+    <div class="seven columns offset-by-two">
+      <div class="animated fadeIn two">
+       <p> A night out in Austin, TX is a lot of fun. What’s not fun is figuring out who payed for what, and how much you owe. (Not that we need a reason to go out) Me and 4 other friends went out and each of us picked up different tabs, paid for ride share and at the end of the night, use Venmo to figure out how to reimburse each other.</p>
+       <div class="spacer48"> </div>
+       <h1>Scenario 1</h1><p>Fron Pays Uber Despite his lack of internet connection on his phone, Fron managed to order and pay $22.17 for UBER. OOPS, he hit the pay button, so he paid $22.17, to each of us. His bank account took a $88.68 dip, pretty big for a college student, right? Wrong. He graduated and got a gig with a big paycheck, lucky bastard. (Fron didn’t get his money back).</p>
+      <div class="spacer48"> </div>
+      <h1>Scenario 2</h1><p>Phoebe and Steph pays for food After a night out, we all went to Magnolias (An Austin treasure) and got food. Phoebe and Steph agreed to order the queso-omellete, with a side of pancakes, sausage, and home fries (a lot of food). Steph pays with her card and Phoebe pays back via venmo. She hit Pay twice because the screen gives no feedback, and Venmo recorded two transactions.</p>
+      <div class="spacer48"> </div>
+      <h1>Scenario 3</h1><p>Wanting to be Mr. Bigshot, Shahid paid for our bar tab at Las Perlas. Inside, he really felt burdened because he is wondering when Yohanes will complete the recent grocery charge. Yohanes on the other hand is a clumsy person. Often times he forgot to bring his wallet, so he use people’s money with promise to pay back via Venmo (this rarely happens). Actually, Yohanes doesn’t know where to check for his charges on the app. Poor guy.</p>
+     </div>
+    </div>
+  </div>
+</div>
+  <div class="row">
+    <div class="six columns offset-by-three">
+      <img class="u-max-full-width" src="images/venmo-in-use.png" style="opacity:0.8">
+    </div>
+  </div>
+  <div class = "spacer48"></div>
+
+  <div class="spacer48"></div>
+<div class= "container animated FadeIn two">
+  <div class="row group">
+    <div class="three columns icon">
+   		<h4>Findings</h4>
+    </div>
+    <div class="seven columns offset-by-two">
+      <div class="animated fadeIn two">
+       <p>The current app doesn’t show incomplete charge in a clear menu. It is located in the notification page along with the social function of the page (payment comment, or likes). Incomplete charge should be separate from other function of the app because it is one of the main functionality. Information about incomplete charges should be consolidated to help users track their financial state within the app.</p>
+       <p> Thanks for reading!</p>
+      </div>
+    </div>
+  </div>
+  <div class="spacer48"></div>
+  <div class="row group">
+    <div class="three columns icon">
+   		<h4>Results</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="six columns offset-by-three">
+    <img class="u-max-full-width" src="images/venmo-results.png">
+  </div>
+</div>
+<div class="row">
+  <div class="six columns offset-by-three">
+    <div class="spacer48"></div>
+    <p><svg style="width:16px;height:14px" viewBox="0 0 24 24"><path fill="#C8C8C9" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/></svg><a href="index.html" target="_blank" class="underline"> Back to home</p></a>
+  </div>
+</div>
+
+<footer>
+  <div class = "row group">
+    <div class = "three columns offset-by-three">
+      <p>Yohanes Sitanggang</p>
+      <p>Contact information: <a href="sitanggang.yohanes@utexas.edu">
+      Email me bruh</a>.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
