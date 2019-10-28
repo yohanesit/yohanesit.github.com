@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 
-
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>yohanesit</title>
-  <meta name="Interaction Designer" content="I'm Yohanes Sitanggang, a Interaction Designer at Accenture."
+  <meta name="description" content="Yohanes Sitanggang, Accenture."
   <meta name="author" content="">
 
   <!-- Mobile Specific Metas
@@ -20,7 +19,6 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/hover.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -47,7 +45,7 @@
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("June 1, 2018 09:00:00").getTime();
+var countDownDate = new Date("Aug 1, 2016 09:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -75,6 +73,29 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 
+    <!-- Google Analytics
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-48335777-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <script>
+      var trackOutboundLink = function(url) {
+         ga('send', 'event', 'outbound', 'click', url, {
+           'transport': 'beacon',
+           'hitCallback': function(){document.location = url;}
+         });
+      }
+    </script>
+
 </head>
 <body>
 
@@ -82,27 +103,90 @@ var x = setInterval(function() {
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <body class="night">
-<div class="square"></div>
 <div class="container animated fadeIn one">
-  <div class="row">
-    <div class="three columns offset-by-three">
-    <h1>🤘</h1>
+  <div class="row group">
+    <div class="three columns icon">
+      <h1>🤘</h1>
     </div>
-    <div class="seven columns offset-by-three">
-    <h1 class="night">Greetings I'm Yohanes,</h1>
-  </div>
-<div class="animated fadeIn two">
-  <div class="row">
-    <div class="seven columns offset-by-three">
-        <p>I am currently a part of a team at <a href="https://www.accenture.com/us-en/services/interactive-index">Accenture Interactive</a>. I’m all about crafting meaningful digital interactions for real-life business problems.  </p>
+
+    <div class="six columns offset-by-three">
+      <h1 class="night">Greetings,</h1>
+
+      <div class="animated fadeIn two">
+       <p>Yohanes here! I am currently a part of a team at <a href="https://www.accenture.com/us-en/services/interactive-index">Accenture Interactive</a>. I’m all about crafting meaningful digital interactions for real-life business problems.  </p>
+
        <p> Born and raised in a remote town in Indonesia, I got the chance of the lifetime to study in Austin, where they have the best barbecues in the world. I still have haunting dreams about the brisket at Franklin’s. </p>
+
+
+      <div class="spacer48"></div>
+
       </div>
+
+      <h4 class="animated fadeIn three">Experience</h4>
+
+    </div>
+
   </div>
+
+  <div class="row group">
+    <div class="three columns offset-by-six animated fadeIn three">
+      <h2 class="night"><a href="https://stripe.com/" target="_blank" class="underline">Stripe</a></h2>
+    </div>
+    <div class="three columns animated fadeIn three">
+      <h3>UX Designer</h3>
+      <h4>2016–Now</h4>
+    </div>
+  </div>
+
+  <div class="row group">
+    <div class="three columns offset-by-six animated fadeIn three">
+      <h2 class="night"><a href="https://wistia.com/" target="_blank" class="underline">Wistia</a></h2>
+    </div>
+    <div class="three columns animated fadeIn three">
+      <h3>Product Designer</h3>
+      <h4>2015–2016</h4>
+    </div>
+  </div>
+
+  <div class="row group">
+    <div class="three columns offset-by-six animated fadeIn three">
+        <h2 class="night underline-rdio">Rdio</h2>
+        <div id="rdio-psa">Acquired by Pandora</div>
+    </div>
+    <div class="three columns animated fadeIn three">
+      <h3>UX Design Co-op</h3>
+      <h4>2014</h4>
+    </div>
+  </div>
+
+  <div class="row group">
+    <div class="three columns offset-by-six animated fadeIn three">
+
+      <div class="spacer48"></div>
+
+      <h4>Education</h4>
+
+    </div>
+
+  </div>
+
+  <div class="row group">
+
+    <div class="three columns offset-by-six animated fadeIn three">
+      <h2 class="night"><a href="https://www.northeastern.edu/" target="_blank" class="underline">Northeastern University</a></h2>
+    </div>
+
+    <div class="three columns animated fadeIn three">
+      <h3>Interaction Design and Business</h3>
+      <h4>2011–2016</h4>
+    </div>
+
+  </div>
+
 </div>
-<div class="spacer48"></div>
 
-
-
+</div>
+</body>
 
 
 <!-- End Document
