@@ -29,7 +29,7 @@
 }
 
 body.night a {
-	color: #fff;
+	color: #393E46;
 	font-family: Inter-UI-Medium;
 	text-decoration: none;
 }
@@ -172,6 +172,11 @@ body.night #sun {
 	width: 100%;
 }
 
+.rectangle {
+	width: device-width;
+	height: 8px;
+	background: linear-gradient(270deg, #FFFFFF 0%, #F8B500 98.63%);
+}
 
 /* For devices smaller than 400px */
 @media (max-width: 550px) {
