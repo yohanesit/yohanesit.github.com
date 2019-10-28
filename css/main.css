@@ -138,8 +138,8 @@ body.day a {
 
 
 body.night {
-	background-color: #221F26;
-	color: #C8C8C9;
+	background-color: #F7F7F7;
+	color: #5C636E;
 	font-family: Inter-UI;
 	font-size: 16px;
 	line-height: 24px;
@@ -147,14 +147,14 @@ body.night {
 
 body.day {
 	background-color: #F6F6F7;
-	color: #403E43;
+	color: #5C636E;
 	font-family: Inter-UI;
 	font-size: 16px;
 	line-height: 24px;
 }
 
 footer {
-	color: #9F9EA1;
+	color: #5C636E;
 	font-family: Inter-UI;
 	font-size: 12px;
 	letter-spacing: 1px;
@@ -164,34 +164,32 @@ footer {
 }
 
 body.night h1 {
-	color: #fff;
+	color: #5C636E;
 	font-family: Inter-UI-Bold;
 	font-size: 20px;
 	letter-spacing: .25px;
-	line-height: 28px;
+	line-height: 36px;
 	padding-bottom: 48px;
 }
 
-body.day h1 {
-	color: #403E43;
+body.night a {
+	color: #774898;
 	font-family: Inter-UI-Bold;
-	font-size: 20px;
-	letter-spacing: .25px;
-	line-height: 28px;
-	padding-bottom: 48px;
+	font-size: 16px;
+	letter-spacing: 0.35px;
+	line-height: 24px;
+	margin-bottom: 4px;
+}
+
+
+.rectangle {
+  height: 50px;
+  width: device-width;
+  background-color: #555;
 }
 
 body.night h2 {
-	color: #fff;
-	font-family: Inter-UI-Bold;
-	font-size: 16px;
-	letter-spacing: .25px;
-	line-height: 24px;
-	margin-bottom: 48px;
-}
-
-body.day h2 {
-	color: #403E43;
+	color: #5C636E;
 	font-family: Inter-UI-Bold;
 	font-size: 16px;
 	letter-spacing: .25px;
@@ -200,16 +198,7 @@ body.day h2 {
 }
 
 body.night h3 {
-	color: #C8C8C9;
-	font-family: Inter-UI;
-	font-size: 16px;
-	letter-spacing: 0.35px;
-	line-height: 24px;
-	margin-bottom: 4px;
-}
-
-body.day h3 {
-	color: #403E43;
+	color: #5C636E;
 	font-family: Inter-UI;
 	font-size: 16px;
 	letter-spacing: 0.35px;
@@ -218,17 +207,7 @@ body.day h3 {
 }
 
 body.night h4 {
-	color: #8A898C;
-	font-family: Inter-UI;
-	font-size: 12px;
-	letter-spacing: 1.5px;
-	line-height: 20px;
-	margin-top: 0px;
-	text-transform: uppercase;
-}
-
-body.day h4 {
-	color: #9F9EA1;
+	color: #5C636E;
 	font-family: Inter-UI;
 	font-size: 12px;
 	letter-spacing: 1.5px;
@@ -276,13 +255,6 @@ body.day #sun {
 	width: 20px;
 	float: right
 }
-
-
-
-
-
-/* Day mode styling */
-
 
 
 }
