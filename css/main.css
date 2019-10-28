@@ -13,58 +13,24 @@
 }
 
 @font-face {
-	font-family: Inter-UI-Bold;
-	src: url(../fonts/Inter-UI-Bold.ttf);
+	font-family: Inter-UI-Medium;
+	src: url(../fonts/Inter-UI-Medium.ttf);
 }
 
+/* @font-face {
+	font-family: NeueHaasMedium;
+	src: url(../fonts/NHaasGroteskTXPro-75Bd.ttf);
+} */
 
 * {
 	-webkit-font-smoothing: antialiased;
 	margin:0;
     padding: 0;
 }
-body, html {
-    height: 100%;
-}
-
-/* The hero image */
-.hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/getcraft-hero.png");
-
-    /* Set a specific height */
-    height: 65%;
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.venmo-hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/venmo-hero.png");
-
-    /* Set a specific height */
-    height: 65%;
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
 
 body.night a {
 	color: #fff;
-	font-family: Inter-UI-Bold;
-	text-decoration: none;
-}
-
-body.day a {
-	color: #403E43;
-	font-family: Inter-UI-Bold;
+	font-family: Inter-UI-Medium;
 	text-decoration: none;
 }
 
@@ -121,7 +87,7 @@ body.day a {
 }
 
 #rdio-psa {
-	color: #8A898C;
+	color: #393E46;
 	font-family: Inter-UI;
 	font-size: 12px;
 	letter-spacing: 0.75px;
@@ -139,22 +105,14 @@ body.day a {
 
 body.night {
 	background-color: #F7F7F7;
-	color: #5C636E;
-	font-family: Inter-UI;
-	font-size: 16px;
-	line-height: 24px;
-}
-
-body.day {
-	background-color: #F6F6F7;
-	color: #5C636E;
+	color: #393E46;
 	font-family: Inter-UI;
 	font-size: 16px;
 	line-height: 24px;
 }
 
 footer {
-	color: #5C636E;
+	color: #393E46;
 	font-family: Inter-UI;
 	font-size: 12px;
 	letter-spacing: 1px;
@@ -164,33 +122,17 @@ footer {
 }
 
 body.night h1 {
-	color: #5C636E;
-	font-family: Inter-UI-Bold;
+	color: #393E46;
+	font-family: Inter-UI-Medium;
 	font-size: 20px;
 	letter-spacing: .25px;
-	line-height: 36px;
+	line-height: 28px;
 	padding-bottom: 48px;
 }
 
-body.night a {
-	color: #774898;
-	font-family: Inter-UI-Bold;
-	font-size: 16px;
-	letter-spacing: 0.35px;
-	line-height: 24px;
-	margin-bottom: 4px;
-}
-
-
-.rectangle {
-  height: 50px;
-  width: device-width;
-  background-color: #555;
-}
-
 body.night h2 {
-	color: #5C636E;
-	font-family: Inter-UI-Bold;
+	color: #393E46;
+	font-family: Inter-UI-Medium;
 	font-size: 16px;
 	letter-spacing: .25px;
 	line-height: 24px;
@@ -198,7 +140,7 @@ body.night h2 {
 }
 
 body.night h3 {
-	color: #5C636E;
+	color: #393E46;
 	font-family: Inter-UI;
 	font-size: 16px;
 	letter-spacing: 0.35px;
@@ -207,7 +149,7 @@ body.night h3 {
 }
 
 body.night h4 {
-	color: #5C636E;
+	color: #393E46;
 	font-family: Inter-UI;
 	font-size: 12px;
 	letter-spacing: 1.5px;
@@ -221,17 +163,8 @@ body.night #moon {
 	width: 20px;
 }
 
-body.day #moon {
-	display: none;
-}
-
 body.night #sun {
 	display: none;
-}
-
-body.day #sun {
-	cursor: pointer;
-	width: 20px;
 }
 
 .spacer48 {
@@ -249,98 +182,11 @@ body.night #moon {
 	float: right
 }
 
-body.day #sun {
-	margin-bottom: 80px;
-	padding-right: 8px;
-	width: 20px;
-	float: right
-}
 
 
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
 
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
+/* Day mode styling */
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-.container {
-    position: relative;
-    width: 50%;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-.overlay {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-color: black;
-	opacity: 0;
-}
-
-.hover:hover .overlay {
-	opacity: 0.8;
 }
